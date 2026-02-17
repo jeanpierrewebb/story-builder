@@ -181,6 +181,60 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Tools Section */}
+      <section className="container mx-auto px-4 py-20">
+        <h2 className="text-3xl font-bold text-center mb-4">Your Writing Toolkit</h2>
+        <p className="text-slate-600 text-center mb-12 max-w-2xl mx-auto">
+          Three powerful tools to take you from blank page to polished essay.
+        </p>
+        <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <Card className="hover:shadow-lg transition-shadow border-2 hover:border-amber-300">
+            <CardHeader>
+              <div className="text-4xl mb-2">🔍</div>
+              <CardTitle>Story Finder</CardTitle>
+              <CardDescription>
+                Discover your best stories through guided reflection prompts.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <Button className="w-full" asChild>
+                <Link href="/discover">Start Discovery</Link>
+              </Button>
+            </CardContent>
+          </Card>
+          
+          <Card className="hover:shadow-lg transition-shadow border-2 hover:border-amber-300">
+            <CardHeader>
+              <div className="text-4xl mb-2">📐</div>
+              <CardTitle>Narrative Arc</CardTitle>
+              <CardDescription>
+                Structure your story with a proven 5-part framework.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <Button className="w-full" variant="outline" asChild>
+                <Link href="/arc">Build Your Arc</Link>
+              </Button>
+            </CardContent>
+          </Card>
+          
+          <Card className="hover:shadow-lg transition-shadow border-2 hover:border-amber-300">
+            <CardHeader>
+              <div className="text-4xl mb-2">✨</div>
+              <CardTitle>Show Don't Tell</CardTitle>
+              <CardDescription>
+                Transform generic statements into vivid scenes.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <Button className="w-full" variant="outline" asChild>
+                <Link href="/transform">Transform Writing</Link>
+              </Button>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="bg-amber-600 text-white py-20">
         <div className="container mx-auto px-4 text-center">
